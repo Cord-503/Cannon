@@ -67,7 +67,6 @@ public class TrajectoryPredictor : MonoBehaviour
     {
         hitMarker.gameObject.SetActive(true);
 
-        // Offset marker from surface
         float offset = 0.025f;
         hitMarker.position = hit.point + hit.normal * offset;
         hitMarker.rotation = Quaternion.LookRotation(hit.normal, Vector3.up);
